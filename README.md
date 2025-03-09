@@ -107,12 +107,12 @@ The arms and the items (block, peg, socket) start at a random position and angle
 
 ## Contribute
 
-Instead of using `pip` directly, we use `poetry` for development purposes to easily track our dependencies.
-If you don't have it already, follow the [instructions](https://python-poetry.org/docs/#installation) to install it.
+Instead of using `pip` directly, we use `uv` for development purposes to easily track our dependencies.
+If you don't have it already, follow the [instructions](https://docs.astral.sh/uv/getting-started/installation/) to install it.
 
 Install the project with dev dependencies:
 ```bash
-poetry install --all-extras
+uv install --all-extras
 ```
 
 
@@ -120,10 +120,10 @@ poetry install --all-extras
 
 ```bash
 # install pre-commit hooks
-pre-commit install
+uv run pre-commit install
 
 # apply style and linter checks on staged files
-pre-commit
+uv run pre-commit
 ```
 
 
